@@ -13,9 +13,9 @@ namespace SelectionStatements
 
             var userInput = int.Parse(Console.ReadLine());
 
-            if (userInput == favNumber)
+            if (userInput < favNumber)
             {
-                Console.WriteLine($"You guessed my number!");
+                Console.WriteLine($"To low...");
             }
             else if (userInput > favNumber)
             {
@@ -23,8 +23,10 @@ namespace SelectionStatements
             }
             else
             {
-                Console.WriteLine($"Too low...");
+                Console.WriteLine($"You guessed my number!");
             }
         }
     }
 }
+
+    
