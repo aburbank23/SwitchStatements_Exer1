@@ -8,8 +8,7 @@ namespace SelectionStatements
         {
             Console.WriteLine("Welcome! Guess my favorite number. Go!");
 
-            var r = new Random();
-            var favNumber = r.Next(1, 1000);
+            var favNumber = 23;
 
             var userInput = int.Parse(Console.ReadLine());
 
